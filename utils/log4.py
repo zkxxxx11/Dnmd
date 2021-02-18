@@ -392,6 +392,7 @@ class Log(object):
         self.__log_name = doce_check(root_path, make_file=name)
         self.__level = level
         self.logger = logging.getLogger(self.__log_name)
+        self.logger.handlers.clear()
         self.logger.setLevel(self.__level)
         self.__ini_handler()
 
