@@ -1,0 +1,11 @@
+无关？？？？？？
+不同设备以下参数会不同  但固定  可以从前一个请求中获得 ？？？？
+  但当已经打卡成功时就会拿不到
+__VIEWSTATE
+__VIEWSTATEGENERATOR
+__EVENTVALIDATION
+
+有关？   
+{'name':'xx'}   data表单中 的name为转码后的ctl00%24ContentPlaceHolder1%24RBL_YQ
+fiddler上：第一次提交    要为ctl00$ContentPlaceHolder1$RBL_YQ  
+

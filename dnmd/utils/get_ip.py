@@ -5,7 +5,7 @@ from utils.log4 import Log
 logger = Log(name='get_ip.log').logger
 
 
-def get_random_proxy(retry_time):
+def get_random_proxy(retry_time=1):
     if retry_time < 5:
         url = '	http://api.shenlongip.com/ip'
         params = {
@@ -19,3 +19,5 @@ def get_random_proxy(retry_time):
         return str(html.text.strip())
     else:
         logger('ip 不行了 失败超出设定次数')
+
+# get_random_proxy(1)

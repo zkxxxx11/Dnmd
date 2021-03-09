@@ -1,0 +1,27 @@
+部署：https://blog.csdn.net/qq_44523137/article/details/112676287
+安装redis：https://www.cnblogs.com/swda/p/12013439.html
+定时https://help.aliyun.com/knowledge_detail/41445.html
+上一层的包
+import sys
+from os.path import dirname, abspath
+import sys
+import os
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
+
+
+
+邮件发送：
+ # server = smtplib.SMTP("smtp.qq.com", 25) # SMTP协议默认端口是25
+ # server = smtplib.SMTP_SSL("smtp.qq.com", 465) # SMTP协议默认端口是25
+
+  smtpObj = smtplib.SMTP_SSL()
+smtpObj.connect(self.mail_host, 465)  # 服务器上时25ban安全组添加465
+
+
+
+redis：https://blog.csdn.net/q1035331653/article/details/79077260
+https://www.cnblogs.com/swda/p/12013439.html
+	service redis start
+	 redis-server

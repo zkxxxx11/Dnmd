@@ -1,0 +1,331 @@
+/*
+ *
+ * Template Name: Fullscreen Login
+ * Description: Login Template with Fullscreen Background Slideshow
+ * Author: Anli Zaimi
+ * Author URI: http://azmind.com
+ *
+ */
+
+
+body {
+    background: #f8f8f8;
+    /*font-family: 'PT Sans', Helvetica, Arial, sans-serif;*/
+	font-family:"Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
+    text-align: center;
+    color: #fff;
+}
+
+.page-container {
+    margin: 120px auto 0 auto;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 0 1px 4px rgba(0,0,0,.2);
+}
+
+form {
+    position: relative;
+    width: 305px;
+    margin: 15px auto 0 auto;
+    text-align: center;
+}
+
+input {
+    width: 270px;
+    height: 42px;
+	line-height:42px;
+    margin-top: 25px;
+    padding: 0 15px;
+    background: #2d2d2d; /* browsers that don't support rgba */
+    *background-color:transparent;
+    background: rgba(45,45,45,.15);
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #3d3d3d; /* browsers that don't support rgba */
+    border: 1px solid rgba(255,255,255,.15);
+    -moz-box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
+    -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,.1);
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+
+input:-moz-placeholder { color: #fff; }
+input:-ms-input-placeholder { color: #fff; }
+input::-webkit-input-placeholder { color: #fff; }
+
+input:focus {
+    outline: none;
+    -moz-box-shadow:
+        0 2px 3px 0 rgba(0,0,0,.1) inset,
+        0 2px 7px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow:
+        0 2px 3px 0 rgba(0,0,0,.1) inset,
+        0 2px 7px 0 rgba(0,0,0,.2);
+    box-shadow:
+        0 2px 3px 0 rgba(0,0,0,.1) inset,
+        0 2px 7px 0 rgba(0,0,0,.2);
+}
+
+#submit {
+    cursor: pointer;
+    width: 300px;
+    height: 44px;
+    margin-top: 25px;
+    padding: 0;
+    background: #ef4300;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 0px;
+    -moz-box-shadow:
+        0 15px 30px 0 rgba(255,255,255,.25) inset,
+        0 2px 7px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow:
+        0 15px 30px 0 rgba(255,255,255,.25) inset,
+        0 2px 7px 0 rgba(0,0,0,.2);
+    box-shadow:
+        0 15px 30px 0 rgba(255,255,255,.25) inset,
+        0 2px 7px 0 rgba(0,0,0,.2);
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,.1);
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+
+#submit:hover {
+    -moz-box-shadow:
+        0 15px 30px 0 rgba(255,255,255,.15) inset,
+        0 2px 7px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow:
+        0 15px 30px 0 rgba(255,255,255,.15) inset,
+        0 2px 7px 0 rgba(0,0,0,.2);
+    box-shadow:
+        0 15px 30px 0 rgba(255,255,255,.15) inset,
+        0 2px 7px 0 rgba(0,0,0,.2);
+}
+
+#submit:active {
+    -moz-box-shadow:
+        0 15px 30px 0 rgba(255,255,255,.15) inset,
+        0 2px 7px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow:
+        0 15px 30px 0 rgba(255,255,255,.15) inset,
+        0 2px 7px 0 rgba(0,0,0,.2);
+    box-shadow:        
+        0 5px 8px 0 rgba(0,0,0,.1) inset,
+        0 1px 4px 0 rgba(0,0,0,.1);
+
+    border: 0px solid #ef4300;
+}
+
+.connect {
+    width: 800px;
+    margin: 50px auto 0 auto;
+    font-size: 14px;
+    
+    text-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+.connect p{
+    position:relative;
+	left:-140%;
+	top:0
+}
+.connect a {
+    display: inline-block;
+    width: 32px;
+    height: 35px;
+    margin-top: 15px;
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+.alert{
+    z-index: 1;
+	width:310px;
+	height:200px;
+	background:#000;
+	position:absolute;
+	top:-40%;
+	left:50%;
+    margin: -101px 0 0 -151px;
+}
+.alert h2{
+	height:40px;
+	padding-left:8px;
+	font-size:14px;
+	background:#FF0543;
+	text-align:left;
+	line-height:40px;
+}
+.alert .alert_con{
+	background:#fff;
+	height:160px;
+}
+.alert .alert_con p{
+	color:#000;
+	line-height:90px;
+}
+.alert .alert_con .btn{
+	padding:3px 10px;
+	color:#fff;
+	cursor:pointer;
+	background:#72D1FF;
+	border:1px solid #72D1FF;
+	border-radius:4px;
+}
+.alert .alert_con .btn:hover{
+	background:#4FB2EF;
+	border:1px solid #4FB2EF;
+	border-radius:4px;
+}
+.page-container p{
+    /* margin-top: 50px; */
+}
+.page-container p a{
+    /*overflow: hidden;*/
+	position: relative;
+	padding: 10px 20px;
+	color: #03e9f4;
+	/*取消a表现原有的下划线*/
+	text-decoration: none;
+	/*同样加个过渡*/
+	transition: all 0.5s;
+}
+.page-container p a:hover {
+	color: #fff;
+	border-radius: 5px;
+	background-color: #03e9f4;
+	box-shadow: 0 0 5px #03e9f4,0 0 25px #03e9f4,0 0 50px #03e9f4,0 0 100px #03e9f4;
+}
+.page-container p a span{
+	position: absolute;
+}
+.page-container p a span:first-child {
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	/*to right 就是往右边 下面的同理*/
+	background: linear-gradient(to right,transparent,#03e9f4);
+	/*动画 名称  时长 linear是匀速运动 infinite是无限次运动*/
+	animation: move1 1s linear infinite;
+
+}
+.page-container p a span:nth-child(2){
+	right: 0;
+	top: -100%;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(transparent,#03e6f4);
+	/*这里多了个0.25s其实是延迟时间*/
+	animation: move2 1s linear 0.25s infinite;
+}
+
+.page-container p a span:nth-child(3){
+	right: -100%;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(to left,transparent,#03e9f4);
+
+	animation: move3 1s linear 0.5s infinite;
+}
+
+.page-container p a span:last-child{
+	left: 0;
+	bottom: -100%;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(#03e9f4,transparent);
+	animation: move4 1s linear 0.75s infinite;
+}
+/*写一下动画 */
+@keyframes move1{
+	0%{
+		left: -100%;
+
+	}
+	50%,
+	100%{
+		left: 100%;
+	}
+}
+
+@keyframes move2{
+	0%{
+		top: -100%;
+
+	}
+	50%,
+	100%{
+		top: 100%;
+	}
+}
+
+@keyframes move3{
+	0%{
+		right: -100%;
+
+	}
+	50%,
+	100%{
+		right: 100%;
+	}
+}
+
+@keyframes move4{
+	0%{
+		bottom: -100%;
+
+	}
+	50%,
+	100%{
+		bottom: 100%;
+	}
+}
+.ds{
+    margin: 40px 0;
+}
+.bear{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background: url(../img/bear.png) no-repeat;
+    animation: bear .4s steps(8) infinite, move 3s forwards;
+}
+@keyframes bear {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1600px 0;
+    }
+}
+
+@keyframes move {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 50%;
+        /* margin-left: -100px; */
+        transform: translateX(-50%);
+    }
+}

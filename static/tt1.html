@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>【dnmd】</title>
+</head>
+<body>
+<div align="center" style="margin-top: 40px;">
+    <h3 class="text-center">
+				树大打卡一条龙
+			</h3>
+    <form name="form1"     method="POST">
+        账号id =<input type="text" placeholder="id" name="id" value="{{ var1  }}"required>
+        密码psw=<input type="text" placeholder="应该身份证后6位" name="psw" value="{{ var2  }}"required>
+        邮箱email=<input type="text" placeholder="建议填 用于通知建议qq" name="email" value="{{ var3  }}">
+<!--        sex=<input type="text" placeholder="sex" name="sex" value="{{ var4  }}">-->
+        <input type="submit" value="提交" οnclick="">
+    </form>
+    <!-- <p><span class="label" contenteditable="true">文字标签</span></p> -->
+    <p><a href="http://127.0.0.1:5000/thankyou">打赏</a></p>
+
+
+
+</div>
+{% if message %}
+    <p style="color:red">{{ message }}</p>
+    {% endif %}
+</body>
