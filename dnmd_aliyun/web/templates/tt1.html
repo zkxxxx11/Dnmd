@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--    <header class="intro-header" style="background-image: url('static/img/1.jpg')">-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>【tttttttttttt】</title>
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/supersized.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <div class="page-container">
+        <h1>树大打卡一条龙</h1>
+        <form name="form1" method="POST">
+            <input type="text" placeholder="账号" name="id" value="{{ var1  }}" required>
+            <input type="text" placeholder="密码 应该身份证后6位" name="psw" value="{{ var2  }}" required>
+            <input type="text" placeholder="邮箱 建议填 用于通知建议qq" name="email" value="{{ var3  }}">
+            <input id="submit" type="submit" value="提交" οnclick="">
+        </form>
+        <div class="alert" style="display:none">
+            <h2>消息</h2>
+            <div class="alert_con">
+                <p id="ts"></p>
+                <p style="line-height:70px"><a class="btn">确定</a></p>
+            </div>
+        </div>
+         <p><span class="label" contenteditable="true">文字标签</span></p>
+        <p class="ds"><a href="http://127.0.0.1:5000/thankyou">打赏
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a></p>
+    </div>
+    <div class="bear"></div>
+    {% if message %}
+    <p style="color:red">{{ message }}</p>
+    {% endif %}
+<!--    <script src="{{ url_for('static', filename='http://apps.bdimg.com/libs/jquery/1.6.4/jquery.min.js') }}" type="text/javascript"></script>-->
+
+   <script src="http://apps.bdimg.com/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+    <script src="/static/js/supersized.3.2.7.min.js"></script>
+    <script src="/static/js/supersized-init.js"></script>
+    <script>
+        $(".btn").click(function () {
+            is_hide();
+        })
+        var u = $("input[name=id]");
+        var p = $("input[name=psw]");
+        var e = $("input[n/favicon.icoame=email]");
+        $("#submit").live('click', function () {
+            if (u.val() == '' || p.val() == '' || e.val() == '') {
+                $("#ts").html("请填写必填项目");
+                is_show();
+                return false;
+            }
+        });
+        window.onload = function () {
+            $(".connect p").eq(0).animate({ "left": "0%" }, 600);
+            $(".connect p").eq(1).animate({ "left": "0%" }, 400);
+        }
+        function is_hide() { $(".alert").animate({ "top": "-40%" }, 300) }
+        function is_show() { $(".alert").show().animate({ "top": "45%" }, 300) }
+    </script>
+</body>
